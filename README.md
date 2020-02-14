@@ -1,24 +1,5 @@
 # random-quotes
 
-## Project setup
-```
-npm install
-```
+## ¿De que se trata?
+Este proyecto nació con la intención de brindar una mejora a un recurso que utilizaba [Leo Piccioli](https://www.leopiccioli.com.ar/). Todas las frases utilizadas son de su propiedad. 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
