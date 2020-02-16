@@ -1,14 +1,16 @@
 <template>
+<div>
   <div class="quote">
-    <hr />
+    
     <p
       class="has-text-black-ter has-text-centered has-text-weight-bold is-italic principal"
     >
       {{ formatedQuote }}
     </p>
-    <hr />
-    <div></div>
-    <p class="sign has-text-weight-semibold">
+    
+  </div>
+  <div class="sign">
+    <p class="has-text-weight-semibold">
       <a
         v-bind:href="selectedData.Source"
         target="_blank"
@@ -30,6 +32,7 @@
         v-on:click="shareOnTwitter()"
       />
     </div>
+  </div>
   </div>
 </template>
 
@@ -7369,7 +7372,7 @@ export default {
 .buttons {
   display: table;
   margin: 0 auto;
-  padding-top: 3em;
+  margin-top: 3em;
 }
 .buttons img {
   height: 3em;
@@ -7379,13 +7382,15 @@ export default {
 
 .quote .principal {
   height: 15vh;
-  font-size: 4vw;
+  font-size: 3em;
 }
-.quote .sign {
-  padding-top: 2em;
+.sign {
+  height: 15vh;
+  margin-top:15em;
+  margin-bottom: 0;
   font-size: 1.2em;
 }
-.quote .sign a {
+.sign a {
   color: rgb(10, 10, 10);
 }
 .quote hr {
