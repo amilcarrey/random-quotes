@@ -30,7 +30,7 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 #app {
-  font-family: Roboto Slab, Roboto, Helvetica, sans-serif;
+  font-family: "Roboto Slab", "Roboto", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
