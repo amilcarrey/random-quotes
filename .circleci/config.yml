@@ -8,7 +8,7 @@ jobs:
       - run:
           name: Deploy prod
           working_directory: ~/random-quotes
-          command: ssh -o "StrictHostKeyChecking no" root@198.199.77.151 -y "cd ~/random-quotes;git stash;git checkout master; git pull origin master; sudo docker-compose -f docker-compose-prod.yml up --build -d; sudo docker system prune -f"  
+          command: ssh -o "StrictHostKeyChecking no" root@206.81.6.197 -y "cd ~/random-quotes;git stash;git checkout master; git pull origin master; sudo docker-compose -f docker-compose-prod.yml up --build -d; sudo docker system prune -f"  
 workflows:
   version: 2
   build:
