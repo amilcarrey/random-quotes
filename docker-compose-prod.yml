@@ -1,0 +1,15 @@
+version: "2.1"
+
+services:
+  landings:
+    container_name: random-quotes
+    image: random-quotes
+    restart: always
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - "3000:3000"
+    logging:
+      options:
+        max-size: 50m
