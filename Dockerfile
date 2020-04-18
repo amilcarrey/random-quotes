@@ -3,7 +3,8 @@ FROM node:13-alpine
 WORKDIR /usr/src/app
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 
-#RUN npm config set unsafe-perm true
+RUN npm install @vue/cli
+RUN npm config set unsafe-perm true
 RUN npm install --production --silent
 
 COPY . .
